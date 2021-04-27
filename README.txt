@@ -10,7 +10,15 @@ Federico Segura
     Tengo un emprendimiento propio al que le pongo mucha pila.
     Buscando un nuevo rumbo empece a estudiar de nuevo y aca estoy.    
 
+Cecilia Bourdillon
+    42 años
+    Comunicadora Social y Locutora
+    Me gusta estudiar y buscar siempre nuevos desafíos.
 
+Christian Echazarreta
+    42 años
+    Trabajo por mi cuenta.
+    Esto es algo que siempre me gusto y le llego el momento.
 
 
 
@@ -19,4 +27,7 @@ Federico Segura
 
 
 https://www.regiomendoza.com/
-
+https://asofood.com/aso-product/
+https://www.buywholefoodsonline.co.uk/nuts#/page/1
+https://www.nuts-box.com/roasted-nuts
+https://spicetrekkers.com/store
