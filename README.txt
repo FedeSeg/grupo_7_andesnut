@@ -20,6 +20,11 @@ Christian Echazarreta
     Trabajo por mi cuenta.
     Esto es algo que siempre me gusto y le llego el momento.
 
+Julian Gayoso
+    21 años
+    No trabajo.
+    Me la paso la mayor parte del dia en la computadora. Mi objetivo es trabajar de programador.
+
 
 
 
