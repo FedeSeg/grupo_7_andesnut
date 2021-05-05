@@ -25,7 +25,8 @@ Julian Gayoso
     No trabajo.
     Me la paso la mayor parte del dia en la computadora. Mi objetivo es trabajar de programador.
 
-
+TRELLO
+https://trello.com/grupo_7_andesnut
 
 
 
