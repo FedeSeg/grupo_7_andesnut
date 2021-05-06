@@ -4,6 +4,8 @@ envasadas en envasess de 250, 500 y 1000g.
 El publico objetivo es la gente joven de 18 a 45 aficionada al deporte y el mundo fit en primera instancia. 
 Tambien se apunta a los panaderos y pasteleros
 
+Tablero Trello https://trello.com/b/tUj6tknK/sprint-1#
+
 
 Federico Segura
     Estudie ingenieria industrial y trabaje un tiempo en el petroleo. Me sature y me fui a viajar por unos años.
@@ -25,7 +27,8 @@ Julian Gayoso
     No trabajo.
     Me la paso la mayor parte del dia en la computadora. Mi objetivo es trabajar de programador.
 
-
+TRELLO
+https://trello.com/grupo_7_andesnut
 
 
 
