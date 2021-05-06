@@ -39,3 +39,6 @@ https://asofood.com/aso-product/
 https://www.buywholefoodsonline.co.uk/nuts#/page/1
 https://www.nuts-box.com/roasted-nuts
 https://spicetrekkers.com/store
+
+Trello: https://trello.com/b/tUj6tknK/sprint-1
+GIT: https://github.com/FedeSeg/grupo_7_andesnut
