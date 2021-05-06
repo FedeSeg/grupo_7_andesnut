@@ -1,0 +1,23 @@
+{
+  "name": "grupo_7_ANDESNUT",
+  "version": "1.0.0",
+  "description": "Los productos que vamos a ofrecer en el sitio son frutos secos y frutas desecadas de primera calidad al por menor, \r envasadas en envasess de 250, 500 y 1000g.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedeSeg/grupo_7_andesnut.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedeSeg/grupo_7_andesnut/issues"
+  },
+  "homepage": "https://github.com/FedeSeg/grupo_7_andesnut#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
