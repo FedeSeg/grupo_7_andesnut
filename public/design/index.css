@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -20,6 +21,14 @@ header {
     margin: 30px;
 }
 
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
 .navbar-1 {
     display: none;  /*La navbar-1 aparece en viewports de mayor tamano*/
 }
@@ -35,6 +44,7 @@ header {
 
 .navbar-2 {
     text-align: right;
+    line-height: 20px;
 }
 
 .navbar-2 a {
@@ -47,6 +57,51 @@ header {
     display: none;  /*El banner aparece en viewports de mayor tamano*/
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #9DB88a;
+}
+
+footer nav .contacto {
+    color: #fff;
+}
+
+footer nav .rrss {
+    color: #fff;
+}
+
+footer nav a {
+    color: white;
+    font-style: normal;
+    font-size: 12px;
+}
+
+footer .copy {
+    color: #000;
+    font-size: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    color: #666;
+}
+
+
+footer .desarrolladores {
+    background-color: #fff;
+    font-size: 8px;
+    text-align: center;
+    padding-top: 30px;
+    color: #ebebeb
+}
 /* MEDIA QUERIE PARA TABLET */
 
 @media (min-width: 768px) {
