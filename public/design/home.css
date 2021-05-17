@@ -1,0 +1,72 @@
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section .products,
+main section .main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products {
+    padding: 5px 15px;
+}
+
+main section article {
+    width: 100%;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+}
+
+main section article a {
+    color: rgb(35, 141, 3);
+    font-style: normal;
+    font-size: 14px;
+    text-align: right;
+}
+
+main section article img {
+    border-radius: 6px;
+}
+
+.texto {
+    color: #666;
+}
+
+.menu {
+    display: none;
+   
+}
+
+@media (min-width: 586px) {
+    main section article {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    main section article {
+        width: 33%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 14px;
+        background-color: #f3f3f3;
+    }
+
+    .menu a {
+        color: black;
+    font-style: normal;
+    font-size: 12px;
+    }
+    
+}
