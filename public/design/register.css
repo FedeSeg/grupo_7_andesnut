@@ -76,16 +76,55 @@ header {
    
  }
  
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #9DB88a;
+}
+
+footer nav .contacto {
+    color: #fff;
+}
+
+footer nav .rrss {
+    color: #fff;
+}
+
+footer nav a {
+    color: white;
+    font-style: normal;
+    font-size: 12px;
+}
+
+footer .copy {
+    color: #000;
+    font-size: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    color: #666;
+}
+
+
+footer .desarrolladores {
+    background-color: #fff;
+    font-size: 8px;
+    text-align: center;
+    padding-top: 30px;
+    color: #ebebeb
+}
 /* MEDIA QUERIE PARA TABLET */
 
 @media (min-width: 768px) {
 
-    .form{
-        width: 35%;
-        font-size: 1.25em;
-        display: flex;
-        justify-content: space-between;
-    }
     /* HEADER */
     .navbar-1 {
         display: flex;
