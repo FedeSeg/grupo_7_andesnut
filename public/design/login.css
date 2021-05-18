@@ -64,13 +64,14 @@ header {
     max-width: 400px;
     align-items: center;
     margin-bottom: 5px;
-    
+     
  }
 main{
      display: flex;
      flex-direction: column;
      margin-left: 15px;
-     margin-right: 15px
+     margin-right: 15px;
+     align-items: center;
     }
     
  /* FOOTER */
