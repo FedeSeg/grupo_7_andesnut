@@ -76,6 +76,7 @@ h2 {
     }
 
 
+
 h3 {
     font-size-adjust: 18px;
     font-style: normal;
@@ -85,14 +86,33 @@ h3 {
     margin: 15px;
 }
 
-div.foto-arandanos {
-    width: fit-content;  
-    height: fit-content;
+.caja-producto {
+    width: 720px;
     padding: 5px;
-    border: solid 1px black; 
-    margin: 10px;
+    border: solid 2px black; 
+    margin: 50px;
     text-align: center;
     box-sizing: border-box;
+    float: left;
+}
+
+.foto-producto {
+    width: 95%;
+}
+
+.texto-caja-producto {
+    width: 720px;
+    padding: 5px;
+    border: solid 2px black; 
+    margin: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+}
+
+.texto-producto {
+    width: 90%;
+    text-align: center;
 }
 
 div h4 {
@@ -103,3 +123,46 @@ div h4 {
     box-sizing: border-box;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #9DB88a;
+}
+
+footer nav .contacto {
+    color: #fff;
+}
+
+footer nav .rrss {
+    color: #fff;
+}
+
+footer nav a {
+    color: white;
+    font-style: normal;
+    font-size: 12px;
+}
+
+footer .copy {
+    color: #000;
+    font-size: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    color: #666;
+}
+
+
+footer .desarrolladores {
+    background-color: #fff;
+    font-size: 8px;
+    text-align: center;
+    padding-top: 30px;
+    color: #ebebeb
+}
