@@ -47,7 +47,8 @@
 
     </header>
     <main>
-        <div class="body-login">
+            <!--
+            <div class="body-login">
             <form action="post" name="ingreso" class="form">
             <label for="Usuario">Usuario</label>
             <input type="text" name="Usuario" id="Usuario">
@@ -65,6 +66,29 @@
                 </div>
         </div>
             </form>
+        -->
+        <form>
+            <div class="form-name">
+                <label for="inputName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Ingrese su Nombre.</div>
+            <div class="form-email">
+              <label for="inputEmail1" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Ingrese su email.</div>
+            </div>
+            <div class="form-password">
+              <label for="inputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword1" aria-describedby="passwordHelp">
+              <div id="passwordHelp" class="form-text">Ingrese su contraseña.</div>
+            </div>
+            <div class="form-re-password">
+                <label for="inputRePassword" class="form-label">Contraseña</label>
+                <input type="email" class="form-control" id="inputRePassword" aria-describedby="rePasswordHelp">
+                <div id="rePasswordHelp" class="form-text">Ingrese nuevamente su contraseña.</div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <button type="button" class="btn btn-primary">No recuerdo mi contraseña</button>
+          </form>
         <footer>
             <nav>
                 <div class="contacto">
