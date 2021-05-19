@@ -57,7 +57,14 @@ header {
 .banner {
     display: none;  /*El banner aparece en viewports de mayor tamano*/
 }
-
+/* REGISTER */
+.form-email, .form-password{
+    display: flex;
+    max-width: 400px;
+    align-items: center;
+    margin-bottom: 5px;
+     
+ }
 /* FOOTER */
 
 footer {
