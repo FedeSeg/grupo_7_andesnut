@@ -1,11 +1,12 @@
 const express = require('express');
 const path = require('path')
-const productRoutes = require('./routes/productRoutes.js.js.js')
+const productRoutes = require('./routes/productRoutes.js')
 const homeRoutes = require('./routes/homeRoutes.js')
 const formRoutes = require('./routes/formRoutes.js')
+const cartRoutes = require('./routes/cartRoutes.js')
 
 const app = express()
-const publicPath = path.resolve(__dirname, './public')
+const publicPath = path.resolve(__dirname, '../public')
 
 app.use( express.static(publicPath) )
 
