@@ -8,6 +8,8 @@ const cartRoutes = require('./routes/cartRoutes.js')
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
 
+/*app.set('view engine', 'ejs');*/
+
 app.use( express.static(publicPath) )
 
 app.listen(3000, () => {
