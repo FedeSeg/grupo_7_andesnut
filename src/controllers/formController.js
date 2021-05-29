@@ -1,9 +1,11 @@
 const formController = {
     register: (req,res) => {
-        res.sendFile(path.resolve(__dirname, '../views/register.html'));
+        res.render('register')
+        //res.sendFile(path.resolve(__dirname, '../views/register.html'));
     },
     login: (req,res) => {
-        res.sendFile(path.resolve(__dirname, '../views/login.html'));
+        res.render('login')
+        //res.sendFile(path.resolve(__dirname, '../views/login.html'));
     }
 }
 
