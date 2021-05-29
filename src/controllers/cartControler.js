@@ -3,3 +3,5 @@ const cartController = {
         res.sendFile(path.resolve(__dirname, '../views/productCart.html'));
     }
 }
+
+module.exports = cartController

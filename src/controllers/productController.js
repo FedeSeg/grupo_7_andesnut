@@ -3,3 +3,5 @@ const productController = {
         res.sendFile(path.resolve(__dirname, '../views/productDetail.html'));
     }
 }
+
+module.exports = productController
