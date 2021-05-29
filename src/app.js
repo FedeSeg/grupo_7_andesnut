@@ -23,7 +23,7 @@ app.use('/home', homeRoutes)
 app.use('/form', formRoutes)
 app.use('/productCart', cartRoutes)
 
-// ACA NO DEBERIAN QUEDAR app.get, SOLO app.use! TENGO QUE AGREGAR RUTAS MAIN, RUTAS FORMS Y PRODUCT CART
+
 
 
 
