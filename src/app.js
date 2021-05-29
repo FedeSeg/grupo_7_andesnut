@@ -10,7 +10,7 @@ const publicPath = path.resolve(__dirname, '../public')
 
 app.set('view engine', 'ejs');
 
-app.set( 'views' , './views' )
+app.set( 'views' , './src/views' )
 
 app.use( express.static(publicPath) )
 
