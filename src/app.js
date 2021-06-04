@@ -4,6 +4,8 @@ const productRoutes = require('./routes/productRoutes.js')
 const homeRoutes = require('./routes/homeRoutes.js')
 const formRoutes = require('./routes/formRoutes.js')
 const cartRoutes = require('./routes/cartRoutes.js')
+//* const loginRoutes = require('./routes/loginRoutes') //
+// const registerRoutes = require('./routes/registerRoutes') //
 
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
@@ -22,6 +24,7 @@ app.use('/productDetail', productRoutes)
 app.use('/home', homeRoutes)
 app.use('/form', formRoutes)
 app.use('/productCart', cartRoutes)
+// app.use('/login', loginRoutes) //
 
 
 
