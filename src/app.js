@@ -18,7 +18,8 @@ app.listen(3000, () => {
     console.log('Servidor corriendo en el puerto 3000');
 });
 
-app.use('/productDetail', productRoutes)
+app.use('/productDetail', productRoutes) 
+//app.use('/productDetail/:id', productRoutes)
 app.use('/home', homeRoutes)
 app.use('/form', formRoutes)
 app.use('/productCart', cartRoutes)

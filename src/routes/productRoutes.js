@@ -4,7 +4,7 @@ const path = require('path');
 
 const productController = require('../controllers/productController');
 
-router.get('/productDetail/:idProducto', productController.producto);
+router.get('/', productController.producto);
 //Deberia borrar el /productDetail de router.get porque ya esta especificado en app.js
 
 module.exports = router
