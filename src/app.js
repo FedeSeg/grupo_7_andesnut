@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path')
 const productRoutes = require('./routes/productRoutes.js')
 const homeRoutes = require('./routes/homeRoutes.js')
-const formRoutes = require('./routes/formRoutes.js')
+const userRoutes = require('./routes/userRoutes.js')
 const cartRoutes = require('./routes/cartRoutes.js')
 
 
@@ -22,7 +22,7 @@ app.listen(3000, () => {
 app.use('/productDetail', productRoutes) 
 //app.use('/productDetail/:id', productRoutes)
 app.use('/home', homeRoutes)
-app.use('/form', formRoutes)
+app.use('/user', userRoutes)
 app.use('/productCart', cartRoutes)
 
 
