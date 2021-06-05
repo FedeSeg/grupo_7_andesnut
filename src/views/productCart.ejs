@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="design/normalize.css">
+    <link rel="stylesheet" href="design/cart.css">
+    <script src="https://kit.fontawesome.com/7fb4406744.js" crossorigin="anonymous"></script>
+    <title>Carro de compras</title>
 </head>
+
 <body>
     <div class="cart">
-        <img src="../../public/images/pasas-rubias-600.jpg" alt="pasas-rubias-600" style="width:100%">
-        <h1>Descripcion</h1>
-        <p class="price">$19.99</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
-        <p><button>Agregar al carrito</button></p>
-      </div>
+        <h1>Detalle de compra</h1>
+        <ul>
+            <li>
+                <img src="../../public/images/pasas-rubias-600.jpg" alt="pasas-rubias-600" style="width:100%">
+                <h2>Descripcion</h2>
+                <p class="price">$19.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+                <p><button>Agregar al carrito</button></p>
+            </li>
+        </ul>
+        <br>
+    </div>
+    <div class="cart">
+        <h2>Subtotal</h2> <label for="importe"></label>
+        <label>Envio</label> <input type="checkbox" name='envio'>
+        <p><button>Finalizar Compra</button></p>
+    </div>
+
     
 </body>
 </html>
