@@ -1,4 +1,4 @@
-const formController = {
+const userController = {
     
     register: (req,res) => {
         res.render('register')
@@ -9,4 +9,4 @@ const formController = {
     }
 }
 
-module.exports = formController
+module.exports = userController
