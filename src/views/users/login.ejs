@@ -1,104 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design/normalize.css">
-    <link rel="stylesheet" href="design/index.css">
+
+    <%- include('../partials/head') %>
+
     <link rel="stylesheet" href="design/login.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7fb4406744.js" crossorigin="anonymous"></script>
-    <title>Andesnut login</title>
-    <STYLE>A {text-decoration: none;} </STYLE>
+    
 </head>
+
 <body class="body">
-    <header>
-        <nav class="main-navbar">
-            <div class="logo">
-                <img src="/images/logoAndesnutFondoCeleste.png" alt="Logo Andesnut">
-            </div>
+    
+    <%- include('../partials/header') %>
 
-            <nav class="navbar-1">
-                <ul>
-                    <li>
-                        <a href="/home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="/productDetail">PRODUCTOS</a>
-                    </li>
-                    <li>
-                        <a href="/contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul class="navbar-2">
-                    <li>
-                        <a href="/register">Registrarse <i class="fas fa-id-card"></i></a>
-                    </li>
-                    <li>
-                        <a href="/login">Iniciar Sesion <i class="fas fa-user"></i></a>
-                    </li>
-                </ul>        
-            </nav>
-        </nav>
-        
-    </header>
-        <main>
-            <!-- <div>
-            <img src="/public/images/mix-patagonico-600.jpg" class="img-rounded" alt="mix-patagonico-600">
-            </div>
-            <div class="body-login">
-                <form action="post" name="ingreso" class="form">
-                    <div>
-                        <label for="Usuario">Usuario</label>
-                        <input type="text" name="Usuario" id="Usuario">
-                    </div>
-                    <div>
-                        <label for="password">Ingrese su contraseña</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <div>
-                        <button type="reset">Cancelar
-                        </button>
-                        <button type="submit">Ingresar
-                        </button>
-            </div>
-        -->
+    <main>
+    
         <form>
             <div class="form-email">
-              <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Ingrese su email.</div>
+                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Ingrese su email.</div>
             </div>
             <div class="form-password">
-              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <button type="submit" class="btn btn-primary">Ingresar</button>
             <button type="button" class="btn btn-primary">No recuerdo mi contraseña</button>
-          </form>
-        </main>
-</form>
-<footer>
-    <nav>
-        <div class="contacto">
-            <p><a href="">+5492616263040</a></p>
-            <p><a href="">andesnut.cuyo@gmail.com</a></p>
-        </div>
-        <div class="rrss">
-            <p><a href="">@andes.nut</a></p>
-            <p><a href="">@Andesnut</a></p>
-        </div>
-    </nav>
-    <div class="copy">
-        <h3>Copyright © 1999-2021 Andesnut S.R.L.</h3>
-    </div>
-    <div class="desarrolladores">
-        <p>Julian Gayoso - Christian Echazarreta - Cecilia Bourdillon - Federico Segura</p>
-    </div>
-</footer>
+        </form>
+    </main>
+
+    <%- include('../partials/footer') %>
+
 </body>
+
 </html>
