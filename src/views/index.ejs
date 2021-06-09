@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design/normalize.css">
+    <%- include('./partials/head') %>
     <link rel="stylesheet" href="design/index.css">
     <link rel="stylesheet" href="design/home.css">
-    <script src="https://kit.fontawesome.com/7fb4406744.js" crossorigin="anonymous"></script>
-    <title>Andesnut</title>
-    <STYLE>A {text-decoration: none;} </STYLE>
 </head>
 <body>
-    <header>
-        <nav class="main-navbar">
-            <div class="logo">
-                <img src="/images/logoAndesnutFondoCeleste.png" alt="Logo Andesnut">
-            </div>
 
-            <nav class="navbar-1">
-                <ul>
-                    <li>
-                        <a href="/home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="/productDetail">PRODUCTOS</a>
-                    </li>
-                    <li>
-                        <a href="/contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul class="navbar-2">
-                    <li>
-                        <a href="/register">Registrarse <i class="fas fa-id-card"></i></a>
-                    </li>
-                    <li>
-                        <a href="/login">Iniciar Sesion <i class="fas fa-user"></i></a>
-                    </li>
-                </ul>        
-            </nav>
-        </nav>
-    </header>
+    <%- include('./partials/header') %>
 
     <main>
         
@@ -215,24 +179,7 @@
         </section>
     </main>
 
+    <%- include('./partials/header') %>
     
-    <footer>
-        <nav>
-            <div class="contacto">
-                <p><a href="">+5492616263040</a></p>
-                <p><a href="">andesnut.cuyo@gmail.com</a></p>
-            </div>
-            <div class="rrss">
-                <p><a href="">@andes.nut</a></p>
-                <p><a href="">@Andesnut</a></p>
-            </div>
-        </nav>
-        <div class="copy">
-            <h3>Copyright © 1999-2021 Andesnut S.R.L.</h3>
-        </div>
-        <div class="desarrolladores">
-            <p>Julian Gayoso - Christian Echazarreta - Cecilia Bourdillon - Federico Segura</p>
-        </div>
-    </footer>
 </body>
 </html>
