@@ -1,6 +1,3 @@
-body{
-    background-color: #525252;
-}
 .centered-form{
 	margin-top: 60px;
 }
@@ -13,145 +10,25 @@ button:hover{
     background-color: rgb(177, 173, 173);
     transition: 0.5s;
 }
-/* HEADER */
 
-header {
+.button{
+    margin-top: 5px;
+}
+.form {
     display: flex;
-    background-color: #9DB88a;
-    flex-direction: column;   
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 10px;
+    align-self: center;
+    margin-top: 5px;
+    width: 60%;
 }
-
-.main-navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
-}
-
-.navbar-1 {
-    display: none;  /*La navbar-1 aparece en viewports de mayor tamano*/
-}
-
-.navbar-2,
-.navbar-1 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar-2 {
-    text-align: right;
-}
-
-.navbar-2 a {
-    color: white;
-    font-style: normal;
-    font-size: 12px;
-}
-
-.banner {
-    display: none;  /*El banner aparece en viewports de mayor tamano*/
-}
-/*
- **********************LOGIN********************************
- */
- .button{
-     margin-top: 5px;
- }
- .form {
-     display: flex;
-     flex-wrap: nowrap;
-     flex-direction: column;
-     font-size: 1em;
-     margin: 10px;
-     align-self: center;
-     margin-top: 5px;
-     width: 60%;
- }/*
- .body {
-     display: flex;
-     flex-wrap: nowrap;
- }*/
- .body-login{
-     display: flex;
-     flex-direction: column;
-
-   
- }
- 
-/* FOOTER */
-
-footer {
+.body-login{
     display: flex;
     flex-direction: column;
+
+   
 }
+ 
 
-footer nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: #9DB88a;
-}
-
-footer nav .contacto {
-    color: #fff;
-}
-
-footer nav .rrss {
-    color: #fff;
-}
-
-footer nav a {
-    color: white;
-    font-style: normal;
-    font-size: 12px;
-}
-
-footer .copy {
-    color: #000;
-    font-size: 10px;
-    background-color: white;
-    text-align: center;
-    padding-top: 10px;
-    color: #666;
-}
-
-
-footer .desarrolladores {
-    background-color: #fff;
-    font-size: 8px;
-    text-align: center;
-    padding-top: 30px;
-    color: #ebebeb
-}
-/* MEDIA QUERIE PARA TABLET */
-
-@media (min-width: 768px) {
-
-    /* HEADER */
-    .navbar-1 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .navbar-1 li {
-        display: inline;
-        padding: 30px;
-    }
-
-    .navbar-1 a {
-        color: #EBEBEB;
-        font-style: normal;
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-    .banner {
-        display: block;
-        width: 100%;
-    }
-}
-    
