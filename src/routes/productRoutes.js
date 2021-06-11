@@ -17,12 +17,14 @@ const upload = multer({storage})
 
 const productController = require('../controllers/productController');
 const { filename } = require('../models/productModel');
+const userController = require('../controllers/userController');
 
 router.get('/', productController.producto);
 //Deberia borrar el /productDetail de router.get porque ya esta especificado en app.js
 router.get('/', productController.new)
-router.post('/', upload.single('product-image') )
+router.post('/', upload.single('product-image'))
 module.exports = router
+
 
 
 //req.params.idProducto ------> para tomar el numero de id
