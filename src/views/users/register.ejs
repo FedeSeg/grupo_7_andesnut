@@ -22,33 +22,33 @@
                             <h3 class="panel-title">Hola, registrate para poder realizar tu compra <small>Bienvenido!</small></h3>
                              </div>
                              <div class="panel-body">
-                            <form role="form">
+                            <form role="form" action="/user/register" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                <input type="text" name="userName" id="nombre" class="form-control input-sm" placeholder="Nombre">
+                                <input type="text" name="userName" class="form-control input-sm" placeholder="Nombre">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="userLastName" id="apellido" class="form-control input-sm" placeholder="Apellido">
+                                            <input type="text" name="userLastName" class="form-control input-sm" placeholder="Apellido">
                                         </div>
                                     </div>
                                 </div>
     
                                 <div class="form-group">
-                                    <input type="email" name="userEmail" id="email" class="form-control input-sm" placeholder="Email">
+                                    <input type="email" name="userEmail" class="form-control input-sm" placeholder="Email">
                                 </div>
     
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+                                            <input type="password" name="password" class="form-control input-sm" placeholder="Password">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirma tu Password">
+                                            <input type="password" name="password_confirmation" class="form-control input-sm" placeholder="Confirma tu Password">
                                         </div>
                                     </div>
                                 </div>

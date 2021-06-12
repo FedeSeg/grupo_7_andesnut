@@ -8,8 +8,20 @@ const userController = {
         res.render('users/login')
     },
 
-    newUser: (req,res) => {
-        
+    store: (req, res) => {
+        const { userName, userLastName, userPhone, userAddress, userAddressNum, userEmail } = req.body
+        const user = {
+            userId: userId,
+            userName: userName,
+            userLastName: userLastName,
+            userPhone: userPhone,
+            userAddress: userAddress,
+            userAddressNum: userAddressNum,
+            userEmail: userEmail
+        }
+        console.log(user)
+        const userCreated = userModel.create(user)
+
     }
 }
 

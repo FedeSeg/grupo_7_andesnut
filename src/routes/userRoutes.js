@@ -4,7 +4,7 @@ const path = require('path');
 const userController = require('../controllers/userController');
 
 router.get('/register', userController.register);
-router.post('/register', userController.newUser)
+router.post('/register', userController.store)
 
 router.get('/login', userController.login);
 
