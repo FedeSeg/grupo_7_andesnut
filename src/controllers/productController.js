@@ -2,8 +2,10 @@ const productModel = require('../models/productModel')
 
 const productController = {
     
-    producto: (req,res) => {
-        res.render('products/productDetail') 
+    detail: (req,res) => {
+        const {id} = req.params;
+        const productDetail = productModel.findByPk(id);
+        res.render('products/productDetail', { productDetail }); 
     },
     new: (req, res) => {
         res.render('products/productNew')

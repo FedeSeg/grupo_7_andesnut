@@ -12,22 +12,26 @@
     <%- include('../partials/header') %>
 
     <main>
+        <% if(productDetail == null) {%>
+            Ups, no encontramos tu producto 
+        <% } else { %>
             <section>
-                <h2>Arándanos rojos deshidratados</h2>
+                <h2><%= productDetail.name %></h2>
                 <div class="foto-arandanos">
-                <img src = "./images/arandanos-rojos-deshidratados-600.jpg" alt="Arandanos" width="auto">
-                    <i class="fas fa-search-plus"></i>  
+                <img src = "<%= productDetail.image %>" alt="<%= productDetail.name %>" width="auto">
+                <i class="fas fa-search-plus"></i>  
             </section>
-            
+                
             <section>
                 <h2>Beneficios</h2>
                 <div>
-                <h3>El arándano rojo es muy rico en vitamina C y polifenoles antioxidantes. Gracias a su composición, tiene una alta acción bactericida tanto a nivel digestivo (desde la boca hasta el estómago), así como una alta protección contra las infecciones urinarias. Es un potente antioxidante, pues evita el envejecimiento prematuro de la piel, ayuda a combatir los radicales libres y por lo tanto, también influye positivamente en la salud cardiovascular (protege los vasos sanguíneos y ayuda a mantener niveles adecuados de colesterol en sangre).</h3>
+                <h3><%= productDetail.beneficios %></h3>
                 </div>
             </section>
-            <div><h4>Precio</h4>
+            <div><h4>Precio x Kg $ <%= productDetail.price1 %></h4>
             </div>
             <button type="submit">Añadir al carrito</button>
+        <% } %>   
     </main>
 
     <%- include('../partials/footer') %>

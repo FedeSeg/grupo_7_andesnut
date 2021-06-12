@@ -26,12 +26,12 @@ module.exports = {
         return products
     },
 
-    findbyPk(id) {
+    findByPk(id) {
         const products = this.readFile();
         const productFound = products.find(product => product.id = id);
-        return productFound
+        return productFound;
     },
-    
+
     create(product) {
         product.id = this.generateId();
         const products = this.readFile();
