@@ -23,7 +23,8 @@ router.get('/', productController.producto);
 //Deberia borrar el /productDetail de router.get porque ya esta especificado en app.js
 
 router.get('/new', productController.new)
-router.post('/edit', upload.single('productImage'))
+router.post('/new', productController.store)
+// router.post('/new', upload.single('productImage'))
 module.exports = router
 
 

@@ -16,4 +16,15 @@ module.exports = {
         // Escribir el archivo
         fs.writeFileSync(this.filename, dataJson);
     },
+    generateId(){
+        const products = this.readFile();
+        const lastProduct = products.pop();
+        return lastProduct.id + 1
+
+    }
+    ,
+    create(product) {
+        product.id = this.generateId();
+        const products = this.readFile();
+    }
 }
