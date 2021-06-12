@@ -5,6 +5,7 @@ const productController = {
     detail: (req,res) => {
         const {id} = req.params;
         const productDetail = productModel.findByPk(id);
+        console.log(productDetail)
         res.render('products/productDetail', { productDetail }); 
     },
     new: (req, res) => {

@@ -20,7 +20,7 @@ const { filename } = require('../models/productModel');
 const userController = require('../controllers/userController');
 
 router.get('/detail/:id', productController.detail);
-//Deberia borrar el /productDetail de router.get porque ya esta especificado en app.js
+
 
 router.get('/new', productController.new)
 router.post('/new', productController.store)

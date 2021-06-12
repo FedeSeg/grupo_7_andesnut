@@ -6,8 +6,8 @@ module.exports = {
 
     readFile() {
         const productPath = this.filename;
-        const planetsJson = fs.readFileSync(productPath, 'utf-8');
-        return JSON.parse(planetsJson);
+        const productsJson = fs.readFileSync(productPath, 'utf-8');
+        return JSON.parse(productsJson);
     },
 
     writeFile(newData) {
@@ -28,7 +28,7 @@ module.exports = {
 
     findByPk(id) {
         const products = this.readFile();
-        const productFound = products.find(product => product.id = id);
+        const productFound = products.find(product => product.id == id);
         return productFound;
     },
 
