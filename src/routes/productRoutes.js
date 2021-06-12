@@ -21,8 +21,9 @@ const userController = require('../controllers/userController');
 
 router.get('/', productController.producto);
 //Deberia borrar el /productDetail de router.get porque ya esta especificado en app.js
-router.get('/', productController.new)
-router.post('/', upload.single('product-image'))
+
+router.get('/new', productController.new)
+router.post('/edit', upload.single('productImage'))
 module.exports = router
 
 
