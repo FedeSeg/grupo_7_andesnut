@@ -11,7 +11,6 @@ const userController = {
     store: (req, res) => {
         const { userName, userLastName, userPhone, userAddress, userAddressNum, userEmail } = req.body
         const user = {
-            userId: userId,
             userName: userName,
             userLastName: userLastName,
             userPhone: userPhone,
