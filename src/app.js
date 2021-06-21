@@ -4,7 +4,7 @@ const productRoutes = require('./routes/productRoutes.js')
 const homeRoutes = require('./routes/homeRoutes.js')
 const userRoutes = require('./routes/userRoutes.js')
 const cartRoutes = require('./routes/cartRoutes.js')
-const logMiddleware = require('./middleware/logMiddleware')
+//const logMiddleware = require('./middlewares/logMiddleware')
 
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 app.set( 'views' , './views' )
 
-app.use(logMiddleware);
+//app.use(logMiddleware);
 
 app.use( express.static(publicPath) )
 

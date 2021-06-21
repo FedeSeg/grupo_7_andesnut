@@ -2,6 +2,11 @@ const productModel = require('../models/productModel')
 
 const productController = {
     
+    list: (req, res) => {
+        const productList = productModel.findAll()
+
+        res.render('products/productList', { productList })
+    },
     detail: (req,res) => {
         const {id} = req.params;
         const productDetail = productModel.findByPk(id);
@@ -12,6 +17,7 @@ const productController = {
     },
     store: (req, res) => {
         const { name, price250, price500, price1, beneficios } = req.body
+
         const product = {
             name: name,
             price250: price250,
