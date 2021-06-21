@@ -1,110 +1,127 @@
 [
-    {
-        "id": 1,
-        "image": "/images/almendras-non-pareil-medianas-australianas-600.jpg",
-        "name": "Almendras",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 2,
-        "image": "/images/arandanos-rojos-deshidratados-600.jpg",
-        "name": "Arandanos",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 3,
-        "image": "/images/avellanas-medianas-600.jpg",
-        "name": "Avellanas",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 4,
-        "image": "/images/castanas-de-caju-600.jpg",
-        "name": "Castanas",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 5,
-        "image": "/images/mix-cervecero-premium-600.jpg",
-        "name": "Mix Cervecero",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 6,
-        "image": "/images/mix-cuyano-600.jpg",
-        "name": "Mix Cuyano",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 7,
-        "image": "/images/mix-pasas-600.jpg",
-        "name": "Mix Pasas",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 8,
-        "image": "/images/mix-patagonico-600.jpg",
-        "name": "Mix Patagonico",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 9,
-        "image": "/images/mix-tropical-600.jpg",
-        "name": "Mix Tropical",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 10,
-        "image": "/images/nueces-mariposa-extralight-600.jpg",
-        "name": "Nueces Mariposa",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 11,
-        "image": "/images/pasas-negras-flame-600.jpg",
-        "name": "Pasas Flame",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    },
-    {
-        "id": 12,
-        "image": "/images/pasas-rubias-600.jpg",
-        "name": "Pasas Rubias",
-        "price250": "400",
-        "price500": "750",
-        "price1": "1300",
-        "beneficios": ""
-    }
+  {
+    "id": 1,
+    "image": "/images/almendras-non-pareil-medianas-australianas-600.jpg",
+    "name": "Almendras",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 2,
+    "image": "/images/arandanos-rojos-deshidratados-600.jpg",
+    "name": "Arandanos",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 3,
+    "image": "/images/avellanas-medianas-600.jpg",
+    "name": "Avellanas",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 4,
+    "image": "/images/castanas-de-caju-600.jpg",
+    "name": "Castanas",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 5,
+    "image": "/images/mix-cervecero-premium-600.jpg",
+    "name": "Mix Cervecero",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 6,
+    "image": "/images/mix-cuyano-600.jpg",
+    "name": "Mix Cuyano",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 7,
+    "image": "/images/mix-pasas-600.jpg",
+    "name": "Mix Pasas",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 8,
+    "image": "/images/mix-patagonico-600.jpg",
+    "name": "Mix Patagonico",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 9,
+    "image": "/images/mix-tropical-600.jpg",
+    "name": "Mix Tropical",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 10,
+    "image": "/images/nueces-mariposa-extralight-600.jpg",
+    "name": "Nueces Mariposa",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 11,
+    "image": "/images/pasas-negras-flame-600.jpg",
+    "name": "Pasas Flame",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "id": 12,
+    "image": "/images/pasas-rubias-600.jpg",
+    "name": "Pasas Rubias",
+    "price250": "400",
+    "price500": "750",
+    "price1": "1300",
+    "beneficios": ""
+  },
+  {
+    "name": "Almendra guara",
+    "price250": "43",
+    "price500": "43",
+    "price1": "43",
+    "beneficios": "hola",
+    "id": 13
+  },
+  {
+    "name": "Almendra guara",
+    "price250": "43",
+    "price500": "54",
+    "price1": "43",
+    "beneficios": "hola",
+    "image": "/images/product1624318962376.jpg",
+    "id": 14
+  }
 ]

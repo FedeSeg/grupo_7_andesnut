@@ -16,17 +16,21 @@ const productController = {
         res.render('products/productNew')
     },
     store: (req, res) => {
-        const { name, price250, price500, price1, beneficios } = req.body
-
+        //res.send(req.body)
+        const { name, price250, price500, price1, beneficios } = req.body;
+        const { file } = req
+        const image = file.filename
         const product = {
             name: name,
             price250: price250,
             price500: price500,
             price1: price1,
             beneficios: beneficios,
+            image: '/images/' + image
         }
         const productCreated = productModel.create(product)
 
+    res.redirect('/products/detail/' + productCreated.id);
     }
 }
 
