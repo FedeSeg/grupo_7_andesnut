@@ -55,10 +55,10 @@ module.exports = {
         this.writeFile(newProducts);
     },
     destroy(id) {
-        const planets = this.readFile();
+        const products = this.readFile();
 
-        const newPlanets = planets.filter(planet => planet.id != id);
+        const newProducts = products.filter(product => product.id != id);
 
-        this.writeFile(newPlanets);
+        this.writeFile(newProducts);
     }
 }

@@ -59,7 +59,7 @@ const productController = {
         
         productModel.destroy(id);
 
-        res.redirect('/products/productList');
+        res.redirect('/home');
     }
 }
 

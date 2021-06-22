@@ -31,7 +31,15 @@
             <div><h4>Precio x Kg $ <%= productDetail.price1 %></h4>
             </div>
             <button type="submit">Añadir al carrito</button>
-        <% } %>   
+        <% } %>
+        <div class="actions">
+            <a href="/products/detail/<%= productDetail.id %>/edit">
+                <button>Edit</button>
+            </a>
+            <form action="/products/detail/<%= productDetail.id %>?_method=DELETE" method="POST">
+                <button type="submit">Delete</button>
+            </form>
+        </div>   
     </main>
 
     <%- include('../partials/footer') %>
