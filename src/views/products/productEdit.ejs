@@ -6,27 +6,41 @@
 <body>
     <%- include('../partials/header') %>
     <main>
-        <div class="container">
-            <section>
-                <div class="">
-                    <form action="" method="POST" enctype="multipart/form-data">
-                        <label>Id</label>
-                        <input type="text" name="id">
-                        <label>Imagen</label>
-                        <input type="file" name="productImage"> 
-                        <label>Nombre</label>
-                        <input type="text" name="name"> 
-                        <label>Precio por 250g</label>
-                        <input type="text" name="price250">
-                        <label>Precio por 500g</label>
-                        <input type="text" name="price500"> 
-                        <label>Precio por kilogramo</label>
-                        <input type="text" name="price1">
-                        <button type="submit">Ingresar el producto</button>
-                    </form>
+        
+        <section>
+            
+            <form action="/products/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="input-container">
+                    <label for="name">Producto</label>
+                    <input type="text" name="name" id="name" required value="<%= product.name %> "/>
                 </div>
-            </section>
-        </div>
+                <div class="input-container">
+                    <label for="price250">Precio por 250g</label>
+                    <input type="text" name="price250" id="price250" required value="<%= product.price250 %> "/>
+                </div>
+                <div class="input-container">
+                    <label for="price500">Precio por 500g</label>
+                    <input type="text" name="price500" id="price500" required value="<%= product.price500 %> "/>
+                </div>
+                <div class="input-container">
+                    <label for="price1">Precio por 1Kg</label>
+                    <input type="text" name="price1" id="price1" required value="<%= product.price1 %> "/>
+                </div>
+                <div class="input-container">
+                    <label for="beneficios">Beneficios</label>
+                    <input type="text" name="beneficios" id="beneficios" required value="<%= product.beneficios %> "/>
+                </div>
+                <div class="input-container">
+                    <label for="productImage">Seleccione una imagen</label>
+                    <input type="file" name="productImage" id="productImage" required/>
+                </div>
+                <div class="input-container">
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </form>
+            
+        </section>
+       
     </main>
     <%- include('../partials/footer') %>
 </body>

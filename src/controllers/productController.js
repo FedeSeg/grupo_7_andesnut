@@ -31,6 +31,26 @@ const productController = {
         const productCreated = productModel.create(product)
 
     res.redirect('/products/detail/' + productCreated.id);
+    },
+    edit: (req, res) => {
+        const product = productModel.findByPk(req.params.id);
+
+        res.render('products/productEdit', { product });
+    },
+    update: (req, res) => {
+        const data = req.body;
+        const { id } = req.params;
+
+        productModel.update(data, id);
+
+        res.redirect('/products/detail/' + id);
+    },
+    destroy: (req, res) => {
+        const id = req.params.id;
+        
+        productModel.destroy(id);
+
+        res.redirect('/products/productList');
     }
 }
 

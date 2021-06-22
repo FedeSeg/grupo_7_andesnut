@@ -106,22 +106,5 @@
     "price500": "750",
     "price1": "1300",
     "beneficios": ""
-  },
-  {
-    "name": "Almendra guara",
-    "price250": "43",
-    "price500": "43",
-    "price1": "43",
-    "beneficios": "hola",
-    "id": 13
-  },
-  {
-    "name": "Almendra guara",
-    "price250": "43",
-    "price500": "54",
-    "price1": "43",
-    "beneficios": "hola",
-    "image": "/images/product1624318962376.jpg",
-    "id": 14
   }
 ]
