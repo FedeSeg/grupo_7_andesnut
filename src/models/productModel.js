@@ -38,5 +38,27 @@ module.exports = {
         const productsUpdated = [...products, product];
         this.writeFile(productsUpdated);
         return product;
+    },
+    update(data, id) {
+        const products = this.readFile();
+
+        const newProducts = products.map(product => {
+            if(product.id == id){
+                product = {
+                    id: product.id,
+                    ...data
+                }
+            }
+            return product;
+        });
+
+        this.writeFile(newProducts);
+    },
+    destroy(id) {
+        const planets = this.readFile();
+
+        const newPlanets = planets.filter(planet => planet.id != id);
+
+        this.writeFile(newPlanets);
     }
 }

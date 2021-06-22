@@ -9,7 +9,7 @@
         
         <section>
             
-            <form action="/products/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <form action="/products/detail/<%= product.id %>/edit?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="input-container">
                     <label for="name">Producto</label>
                     <input type="text" name="name" id="name" required value="<%= product.name %> "/>
@@ -31,8 +31,9 @@
                     <input type="text" name="beneficios" id="beneficios" required value="<%= product.beneficios %> "/>
                 </div>
                 <div class="input-container">
+                    <img src="<%= product.image %>" width="300" />
                     <label for="productImage">Seleccione una imagen</label>
-                    <input type="file" name="productImage" id="productImage" required/>
+                    <input type="file" name="productImage" id="productImage" />
                 </div>
                 <div class="input-container">
                     <button type="submit">ENVIAR</button>

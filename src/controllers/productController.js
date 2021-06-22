@@ -40,6 +40,15 @@ const productController = {
     update: (req, res) => {
         const data = req.body;
         const { id } = req.params;
+        const productOriginal = productModel.findByPk(id)
+        const {file} = req
+        
+        let image = productOriginal.image;
+
+        if (file) {
+            image = '/images/' + file.filename
+        }
+        data.image = image
 
         productModel.update(data, id);
 

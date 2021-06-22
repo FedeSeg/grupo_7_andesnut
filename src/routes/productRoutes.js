@@ -23,8 +23,11 @@ router.get('/detail/:id', productController.detail);
 
 router.get('/new', productController.new);
 
-//router.post('/new', productController.store);
 router.post('/new', upload.single('productImage'), productController.store);
-module.exports = router;
+
 
 router.get('/detail/:id/edit', productController.edit);
+router.put('/detail/:id/edit', upload.single('productImage'), productController.update);
+
+
+module.exports = router;
