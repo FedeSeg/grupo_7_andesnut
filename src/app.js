@@ -9,7 +9,7 @@ const methodOverride = require('method-override')
 
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
-const viewsPath = path.resolve(__dirname, './views')
+const viewsPath = path.resolve(__dirname, './views') // ruta absoluta de la carpeta views
 
 app.set('view engine', 'ejs');
 app.set( 'views' , viewsPath )
