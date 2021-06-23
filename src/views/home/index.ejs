@@ -31,19 +31,20 @@
             </nav>
 
             <section class="products">
+                <% productList.forEach((product) => { %>
                 <article>
-                    <div><img src="/images/almendras-non-pareil-medianas-australianas-600.jpg" alt="Almendras" width=100%></div>
+                    <div><img src="<%= product.image %> " alt="<%= product.name %>" width=100%></div>
                     <div class="texto">
                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Almendra Guara</p>
+                        <p class="descripciones"><%= product.name %></p>
                         <div class="precio-descuento">
-                            <p class="precios">$990/Kg</p>
+                            <p class="precios"><%= product.price1 %></p>
                             <p class="presentaciones">250g / 500g / 1Kg</p>
                         </div>                    
                     </div>
                 </article>
-
-                <article>
+                <% }) %> 
+                <!--<article>
                     <div><img src="/images/arandanos-rojos-deshidratados-600.jpg" alt="Arandanos" width=100%></div>
                     <div class="texto">
                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -173,7 +174,7 @@
                             <p class="presentaciones">250g / 500g / 1Kg</p>
                         </div>
                     </div>
-                </article>
+                </article>-->
             </section>  
         </section>
     </main>

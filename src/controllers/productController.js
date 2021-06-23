@@ -5,7 +5,7 @@ const productController = {
     list: (req, res) => {
         const productList = productModel.findAll()
 
-        res.render('products/productList', { productList })
+        res.render('home/index', { productList })
     },
     detail: (req,res) => {
         const {id} = req.params;
@@ -17,24 +17,11 @@ const productController = {
     },
     store: (req, res) => {
         
-        // const { name, price250, price500, price1, beneficios } = req.body;
-        // const { file } = req
-        // const image = file.filename
-        // const product = {
-        //     name: name,
-        //     price250: price250,
-        //     price500: price500,
-        //     price1: price1,
-        //     beneficios: beneficios,
-        //     image: '/images/' + image // el string es para que llegue a la carpeta indicada
-        // }
         const product = req.body
         product.image = '/images/' + req.file.filename //(QUIERO PROBAR CON ESTE CODIGO A VER SI FUNCIONA)
-
-        
         const productCreated = productModel.create(product)
 
-    res.redirect('/products/detail/' + productCreated.id);
+        res.redirect('/products/detail/' + productCreated.id);
     },
     edit: (req, res) => {
         const product = productModel.findByPk(req.params.id);
@@ -65,6 +52,7 @@ const productController = {
 
         res.redirect('/home');
     }
+    
 }
 
 module.exports = productController
