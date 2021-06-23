@@ -9,9 +9,10 @@ const methodOverride = require('method-override')
 
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
+const viewsPath = path.resolve(__dirname, './views')
 
 app.set('view engine', 'ejs');
-app.set( 'views' , './views' )
+app.set( 'views' , viewsPath )
 
 //app.use(logMiddleware);
 app.use ( express.static ( publicPath ) );
