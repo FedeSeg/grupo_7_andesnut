@@ -25,7 +25,7 @@ const productController = {
     },
     edit: (req, res) => {
         const product = productModel.findByPk(req.params.id);
-
+        //req.file ? product.image = '/images/' + req.file.filename
         res.render('products/productEdit', { product });
     },
     update: (req, res) => {
@@ -40,9 +40,9 @@ const productController = {
             image = '/images/' + file.filename
         }
         data.image = image
-
+        //data.image = req.file ? '/images/' + file.filename : productModel.findByPk(id).image
         productModel.update(data, id);
-
+        
         res.redirect('/products/detail/' + id);
     },
     destroy: (req, res) => {

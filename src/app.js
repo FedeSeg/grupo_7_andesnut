@@ -5,7 +5,8 @@ const homeRoutes = require('./routes/homeRoutes.js')
 const userRoutes = require('./routes/userRoutes.js')
 const cartRoutes = require('./routes/cartRoutes.js')
 const methodOverride = require('method-override')
-//const logMiddleware = require('./middlewares/logMiddleware')
+const logMiddleware = require('./middlewares/logMiddleware')
+const session = require('express-session');
 
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
@@ -14,11 +15,14 @@ const viewsPath = path.resolve(__dirname, './views') // ruta absoluta de la carp
 app.set('view engine', 'ejs');
 app.set( 'views' , viewsPath )
 
+//app.use(session({secret: "andesnut"}))
+
 //app.use(logMiddleware);
+
 app.use ( express.static ( publicPath ) );
 app.use ( express.urlencoded ( { extended: false} ) );
 app.use ( methodOverride ('_method') );
-//app.use ( express.json());
+app.use ( express.json());
 
 app.listen(3000, () => {
     console.log('Servidor corriendo en el puerto 3000');
