@@ -15,6 +15,7 @@
         </nav> 
 
         <section class="main">
+            
             <nav class="menu">
                 <p>Categorias</p>            
                 <ul>
@@ -36,7 +37,7 @@
                     <div><img src="<%= product.image %> " alt="<%= product.name %>" width=100%></div>
                     <div class="texto">
                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones"><%= product.name %></p>
+                        <p class="descripciones"><a href="/products/detail/<%= product.id %>"><%= product.name %></a></p>
                         <div class="precio-descuento">
                             <p class="precios"><%= product.price1 %></p>
                             <p class="presentaciones">250g / 500g / 1Kg</p>
@@ -44,138 +45,8 @@
                     </div>
                 </article>
                 <% }) %> 
-                <!--<article>
-                    <div><img src="/images/arandanos-rojos-deshidratados-600.jpg" alt="Arandanos" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Arandanos Rojos Deshidratados</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$860/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/avellanas-medianas-600.jpg" alt="Avellanas" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Avellanas enteras</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$1530/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/castanas-de-caju-600.jpg" alt="Castanas" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Castanas de Caju</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$1150/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/mix-cervecero-premium-600.jpg" alt="Mix Cervecero" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Mix Cervecero</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$640/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/mix-cuyano-600.jpg" alt="Mix Cuyano" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Mix Cuyano</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$680/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/mix-pasas-600.jpg" alt="Mix Pasas" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Mix de Pasas</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$430/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/mix-patagonico-600.jpg" alt="Mix patagonico" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Mix Patagonico</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$830/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/mix-tropical-600.jpg" alt="Mix Tropical" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Mix Tropical</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$700/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/nueces-mariposa-extralight-600.jpg" alt="Nueces Chandler" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Nueces Chandler Extra Light</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$950/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/pasas-negras-flame-600.jpg" alt="Pasas Flame" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Pasas Negras Flame</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$250/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>                    
-                    </div>
-                </article>
-
-                <article>
-                    <div><img src="/images/pasas-rubias-600.jpg" alt="Pasas Rubias" width=100%></div>
-                    <div class="texto">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <p class="descripciones">Pasas Rubias</p>
-                        <div class="precio-descuento">
-                            <p class="precios">$420/Kg</p>
-                            <p class="presentaciones">250g / 500g / 1Kg</p>
-                        </div>
-                    </div>
-                </article>-->
             </section>  
+
         </section>
     </main>
 
