@@ -15,7 +15,7 @@ const viewsPath = path.resolve(__dirname, './views') // ruta absoluta de la carp
 app.set('view engine', 'ejs');
 app.set( 'views' , viewsPath )
 
-//app.use(session({secret: "andesnut"}))
+app.use(session({secret: "andesnut"}))
 
 //app.use(logMiddleware);
 
