@@ -11,7 +11,7 @@ const storage = multer.diskStorage({
        cb(null, folder);
     },
     filename: (req, file, cb) => {
-        const newFileName = 'product' + Date.now() + path.extname(file.originalname); 
+        const newFileName = 'Avatar' + Date.now() + path.extname(file.originalname); 
         cb (null, newFileName);
     }
 });
@@ -20,6 +20,7 @@ const upload = multer({storage});
 
 router.get('/register', userController.register);
 router.post('/register', /*logDBMiddleware,*/ userController.store)
+router.put('/register', upload.single('userImage'), userController.update);
 
 router.get('/login', userController.login);
 
