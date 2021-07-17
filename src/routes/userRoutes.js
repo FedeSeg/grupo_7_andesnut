@@ -21,7 +21,8 @@ const upload = multer({storage});
 router.get('/register', userController.register);
 router.post('/register', /*logDBMiddleware,*/ userController.store)
 router.put('/register', upload.single('avatarFile'), userController.update);
-
 router.get('/login', userController.login);
-
+//router.post('/login', userController.processLogin);
+//router.get('/list', userController.list);
+//router.get('/search', userController.search);
 module.exports = router
