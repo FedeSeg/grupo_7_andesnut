@@ -20,7 +20,7 @@ const upload = multer({storage});
 
 router.get('/register', userController.register);
 router.post('/register', /*logDBMiddleware,*/ userController.store)
-router.put('/register', upload.single('userImage'), userController.update);
+router.put('/register', upload.single('avatarFile'), userController.update);
 
 router.get('/login', userController.login);
 
