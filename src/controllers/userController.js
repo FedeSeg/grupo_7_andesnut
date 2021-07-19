@@ -8,7 +8,7 @@ const userController = {
         // TENGO QUE ARMAR TODO EL REGISTRO
         res.render('users/register')
     },
-    /*
+    /* ss
     processLogin: function(req, res){
         let archivoUsuario = fs.readFileSync('usuarios.json', {encoding: 'utf-8'});
         let usuarios;
