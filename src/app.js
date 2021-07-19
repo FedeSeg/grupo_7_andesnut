@@ -7,6 +7,7 @@ const cartRoutes = require('./routes/cartRoutes.js')
 const methodOverride = require('method-override')
 const logMiddleware = require('./middlewares/logMiddleware')
 const session = require('express-session');
+const bcrypt = require('bcryptjs')
 
 const app = express()
 const publicPath = path.resolve(__dirname, '../public')
