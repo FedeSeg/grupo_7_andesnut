@@ -1,7 +1,11 @@
 const fs = require('fs');
+const bcrypt = require('bcrypt')
 const userController = {
     
     register: (req,res) => {
+        //let password = req.body.password
+        //let resultado = bcrypt.hashSync(password, 10);
+        // TENGO QUE ARMAR TODO EL REGISTRO
         res.render('users/register')
     },
     /*
@@ -19,6 +23,8 @@ const userController = {
     },
     */
     login: (req,res) => {
+        //TENGO QUE VER QUE HAGO CON ESTE
+        //RECORDATORIO FIJARME PROYECTO PLANETS SI TENGO TODO BIEN Y QUE ES LO QUE ME FALTA
         res.render('users/login')
     },
 
